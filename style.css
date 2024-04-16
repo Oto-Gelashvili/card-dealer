@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FAFAFA;
+    text-align: center;
+    color: #4D4F62;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 4rem;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 115%;
+}
+span{
+    font-weight: 300;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+button{
+    min-width: 200px;
+    max-width: 90%;
+    border: none;
+    min-height: 200px;
+    background-color: white;
+    font-size: 3.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px; 
+    transition: 0.4s;
+    outline: none;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.poker{
+    border-top: 3px solid #44d3d2;
+
+}
+.poker:hover{
+    background-color: #44d3d2;
+}
+.joker{
+    border-top: 3px solid #549ef2;
+
+}
+.joker:hover{
+    background-color: #549ef2;
+}
+.bura3{
+    border-top: 3px solid #ea5454;
+}
+.bura3:hover{
+    background-color: #ea5454;
+}
+.bura5{
+    border-top: 3px solid #fcae4a; 
+}
+.bura5:hover{
+    background-color: #fcae4a;
+}
+button:focus {
+    border-top: 3px solid rgba(131, 166, 210, 0.5); 
+}
+button:hover{
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:800px) {
+    .container{
+        flex-direction: column;
+    }
+    body{
+        gap: 14rem;
+    }
+}
+
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+    -webkit-appearance: none;
+     appearance: none;
+     background: transparent;
+     cursor: pointer;
+     width: 200px;
+ }
+ 
+ /* Removes default focus */
+ input[type="range"]:focus {
+   outline: none;
+ }
+ 
+ /***** Chrome, Safari, Opera and Edge Chromium styles *****/
+ /* slider track */
+ input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #44d3d2;
+    border-radius: 2rem;
+    height: 6px;  
+ }
+ 
+ /* slider thumb */
+ input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+    appearance: none; 
+    /*custom styles*/
+    background-color: #fcae4a;
+    height: 16px;
+    width: 16px;
+    top: -5px;
+    position: relative;
+    border-radius: 50%;
+ }
+ 
+ input[type="range"]:focus::-webkit-slider-thumb {   
+   outline: 2px solid #fcae4a;
+   outline-offset: 2px;
+   background-color: #fcae4a;
+ }
+ 
+ /******** Firefox styles ********/
+ /* slider track */
+ input[type="range"]::-moz-range-track {
+    background-color: #44d3d2;
+    border-radius: 2rem;
+    height: 6px;  
+ }
+ 
+ /* slider thumb */
+ input[type="range"]::-moz-range-thumb {
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0; /*Removes default border-radius that FF applies*/
+ 
+    /*custom styles*/
+    background-color: #fcae4a;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+
+ }
+ 
+ input[type="range"]:focus::-moz-range-thumb {
+    outline: 2px solid #fcae4a;
+    outline-offset: 2px;
+    background-color: #fcae4a;
+ }
+ .slider-value{
+    font-size: 1.6rem;
+    transform: rotate(45deg);
+    color: white;
+ }
+ .value-container{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: #fcae4a;
+    border-radius: 50% 50% 50% 0.1rem;
+    transform: rotate(-45deg);
+    display: grid;
+    place-items: center;
+ }
+ .slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+ }
